@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Jitter Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/loginFormatter.css">
+	<script type="text/javascript" src="js/jitterScript.js"></script>
+	<script type="text/javascript" src="js/loginScript.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<br> <br> <br> <br>
+		<div class="row">
+			<div class="col-sm-4">
+			
+				<div class="text-center left-panel">
+					<div class="panel my-body">
+						<div class="panel-heading my-link">
+							<a data-toggle="collapse" href="#collapse1"><h3>Create New Jitterer</h3></a>
+						</div>
+						<div id="collapse1" class="panel-collapse collapse">
+							<div class="panel-body">
+								<label>New Jitterer</label><br>
+								<input id="newusername" type="text" style="width: 80%"><br><br>
+								<label>New Password</label><br>
+								<input type="password" id="newpassword" type="text" style="width: 80%"><br><br>
+								<input type="button" value="Register" onclick="jittererGLOBAL.ajaxRegister()" style="width: 45%">
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+			<div class="col-sm-4">
+				<div class="well well-sm my-well">
+					<div class="text-center my-link">
+						<a><h3>The Latest Jitters</h3></a>
+					</div>
+					<div class="panel-body">
+						<textarea rows="15" id="my-text-area" style="resize: none;" disabled></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+			
+				<div class="text-center right-panel">
+					<div class="panel my-body">
+						<div class="panel-heading my-link">
+							<a data-toggle="collapse" href="#collapse2"><h3>Existing Jitterer Login</h3></a>
+						</div>
+						<div id="collapse2" class="panel-collapse collapse">
+							<div class="panel-body">
+								<label>Jitterer Name</label><br>
+								<input id="username" type="text" style="width: 80%"><br><br>
+								<label>Password</label><br>
+								<input type="password" id="password" type="text" style="width: 80%"><br><br>
+								<input type="button" value="Login" onclick="jittererGLOBAL.ajaxLogin()" style="width:45%">
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+</body>
+</html>

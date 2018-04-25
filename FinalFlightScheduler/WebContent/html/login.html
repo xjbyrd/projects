@@ -1,0 +1,52 @@
+
+<div class="container">
+	<br> <br> <br>
+	<div class="text-center xj-big-heading">
+		Welcome to <img src="../img/logo.png" alt="AA logo" style="width:175px;height:100px;">
+	</div>
+	<br> <br>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-5 xj-pad-right">
+
+			<div class="text-center">
+				<div class="panel  xj-panel">
+					<div class="panel-heading xj-panel-head">
+						<h3>Register New User</h3>
+					</div>
+					<div class="panel-body xj-panel-body">
+
+						<input ng-model="newUsername" class="xj-input xj-clear-outline" /><br><br>
+						<input type="password" ng-model="newPassword" class="xj-input xj-clear-outline" my-enter="register()" /><br>
+						<br>
+						<button ng-click="register()" class="xj-button-lg xj-clear-outline">Register</button>
+
+					</div>
+				</div>
+				<div class="xj-error" ng-show="registerError">Registration failed. Try different username and password.</div>
+			</div>
+
+		</div>
+		<div class="col-md-5 xj-pad-left">
+		
+			<div class="text-center">
+				<div class="panel  xj-panel">
+					<div class="panel-heading xj-panel-head">
+						<h3>Login</h3>
+					</div>
+					<div class="panel-body xj-panel-body">
+
+						<input ng-model="username" class="xj-input xj-clear-outline" /><br><br>
+						<input type="password" ng-model="password" class="xj-input xj-clear-outline" my-enter="login()" /><br>
+						<br>
+						<button ng-click="login()" class="xj-button-lg xj-clear-outline">Login</button>
+
+					</div>
+				</div>
+				<div class="xj-error" ng-show="loginError">Login Failed. Username and password were not found.</div>
+			</div>
+		
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+</div>

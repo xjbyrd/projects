@@ -1,0 +1,20 @@
+<tickets></tickets>
+
+<div class="container">
+	<br>
+	<span><a href ng-click="selectDepartures()" class="xj-link" id="departuresLink">departures</a></span>
+	<span class="xj-divider"> | </span>
+	<span><a href ng-click="selectArrivals()" class="xj-link" id="arrivalsLink">arrivals</a></span>
+	<span class="xj-divider"> | </span>
+	<span><a href ng-click="selectSearch()" class="xj-link" id="searchLink">search</a></span>
+	<br> <br> 
+	<div class="xj-heading text-center"><img src="../img/logo.png" alt="AA logo" style="width:175px;height:100px;"> <span id="heading"></span></div>
+	<br>
+	<div class="col-md-1"></div>
+	<div class="col-md-8">
+		<departures ng-show="showDepartures"></departures>
+		<arrivals ng-show="showArrivals"></arrivals>
+		<search ng-show="showSearch"></search>
+	</div>
+	<div class="col-md-5"></div>
+</div>

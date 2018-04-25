@@ -1,0 +1,32 @@
+<div class="navbar navbar-fixed-top xj-navbar" role="navigation">
+	<div class="container-fluid">
+		<div class="panel xj-scrollbox-panel-square">
+			<div class="panel-heading text-center xj-scrollbox-panel-head-square" data-toggle="collapse" data-target="#collapseOne">
+				<span>Tickets</span>
+			</div>
+			<div class="panel-collapse collapse" id="collapseOne">
+				<div class="panel-body xj-scrollbox-panel-body-md" id="test">
+					<ul class="xj-scrollbox" ng-repeat="ticket in tickets">
+						<div class="well well-sm xj-well">
+							<li class="left clearfix">
+								<div class="chat-body clearfix xj-small-font">
+									<strong class="primary-font">Flight {{ticket.flight.flightId}}</strong>
+									<span ><i> {{ticket.status}}</i></span>
+									<p>
+										<span>{{ticket.flight.origin.city}}, {{ticket.flight.origin.state}} to </span>
+										<span>{{ticket.flight.destination.city}}, {{ticket.flight.destination.state}} </span>
+										<span>boarding on day {{ticket.departure}} ETA day {{ticket.eta}}</span>
+									</p>
+								</div>
+							</li>
+						</div>
+					</ul>
+				</div>
+				<div class="panel-footer xj-scrollbox-panel-footer-square">
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

@@ -1,0 +1,35 @@
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" />
+<title>Air America</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.js"></script>
+
+<script type="text/javascript" src="../js/module/flightModule.js"></script>
+<script type="text/javascript" src="../js/module/flightConfigModule.js"></script>
+
+<script type="text/javascript" src="../js/service/flightService.js"></script>
+
+<script type="text/javascript" src="../js/controller/loginController.js"></script>
+<script type="text/javascript" src="../js/controller/flightController.js"></script>
+<script type="text/javascript" src="../js/controller/flightSearch.js"></script>
+<script type="text/javascript" src="../js/controller/flightTickets.js"></script>
+
+<script type="text/javascript" src="../js/directive/arrivalsDirective.js"></script>
+<script type="text/javascript" src="../js/directive/departuresDirective.js"></script>
+<script type="text/javascript" src="../js/directive/searchDirective.js"></script>
+<script type="text/javascript" src="../js/directive/enterEvent.js"></script>
+<script type="text/javascript" src="../js/directive/ticketsDirective.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../css/flightStyler.css">
+</head>
+<body ng-app="core">
+	<div ng-view>
+	</div>
+</body>
+</html>

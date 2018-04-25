@@ -1,0 +1,25 @@
+
+<div class="panel xj-scrollbox-panel">
+	<div class="panel-heading text-center xj-scrollbox-panel-head">Arrivals - Day {{day}}</div>
+	<div class="panel-body xj-scrollbox-panel-body-lg">
+		
+		<ul class="xj-scrollbox" ng-repeat="flight in arrivals">
+		<div class="well well-sm xj-well">	
+			<li class="left clearfix">
+				<div class="chat-body clearfix">
+					
+						<strong class="primary-font">Flight {{flight.flightId}}</strong>
+						<p>
+							{{flight.origin.city}}, {{flight.origin.state}} to {{flight.destination.city}}, {{flight.destination.state}} boarding in {{flight.departure}} day(s) ETA {{flight.departure + flight.eta}} day(s)
+						</p>
+					
+				</div>
+			</li>
+			</div>
+		</ul>
+		
+	</div>
+	<div class="panel-footer xj-scrollbox-panel-footer">
+		<br>
+	</div>
+</div>

@@ -1,0 +1,47 @@
+
+<div class="panel xj-scrollbox-panel">
+	<div class="panel-heading text-center xj-scrollbox-panel-head">Search for Fastest Routes - Day {{day}}</div>
+	<div class="panel-body xj-scrollbox-panel-body-lg">
+		<div class="text-center">
+		<span>From: </span>
+			<select id="originList" class="xj-input-sm">
+				<option ng-repeat="location in locations" values="{{location}}">{{location.city}}, {{location.state}}</option>
+			</select>
+		<span> &nbsp &nbsp To:</span>
+			<select id="destinationList" class="xj-input-sm">
+				<option ng-repeat="location in locations" values="{{location}}">{{location.city}}, {{location.state}}</option>
+			</select>
+			<br> <br>
+			<button ng-click="findPath()" class="xj-button-md xj-clear-outline">Search</button>
+			<br> <br>
+			<div class="xj-error" ng-show="searchError">No flight paths could be found.</div>
+		</div>
+		<ul class="xj-scrollbox">
+			
+				<li class="left clearfix">
+					<div class="chat-body clearfix" ng-repeat="path in minPaths">
+					<div class="text-center xj-custom-button-title">Click Below to Purchase Ticket(s). Each Ticket $20.</div>
+					<a href ng-click="buyTickets(path)" class="xj-clear">
+					
+						<div class="well well-sm xj-well xj-custom-button">
+							
+							<div ng-repeat="flight in path" >
+							
+								<strong class="primary-font xj-custom-button-head">Flight {{flight.flightId}}</strong>
+								<p class="xj-custom-button-body">
+									<span>{{flight.origin.city}}, {{flight.origin.state}} to {{flight.destination.city}}, </span>
+									<span>{{flight.destination.state}} boarding in {{flight.departure}} days ETA {{flight.departure + flight.eta}} days</span>
+								</p>
+							</div>
+						</div>
+						</a>
+					</div>
+				</li>
+			
+		</ul>
+		
+	</div>
+	<div class="panel-footer xj-scrollbox-panel-footer">
+		<br>
+	</div>
+</div>

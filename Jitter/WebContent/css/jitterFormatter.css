@@ -1,0 +1,108 @@
+@CHARSET "ISO-8859-1";
+
+body
+{
+    background-image: url(../img/coffee.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.9;
+}
+
+.panel-heading
+{
+    border-radius: 30px;
+    background-color: bisque;
+}
+
+.my-body
+{
+	background-color: antiquewhite;
+}
+
+.panel
+{
+	box-shadow: 2px 2px 2px darkred;
+    border-radius: 35px;
+}
+
+h3
+{
+	color:black;
+}
+
+.my-well
+{
+	box-shadow: 2px 2px 2px darkred;
+    border-radius: 25px;
+    background-color: bisque;
+}
+
+.my-link a
+{
+	text-decoration: none;
+}
+
+#list
+{
+	color: black;
+}
+
+#my-text-area:hover, #my-text-area2:hover, #my-text-area3:hover
+{
+	cursor: default !important;
+}
+
+#my-text-area, #my-text-area2, #my-text-area3
+{
+	width: 100%;
+	background-color:antiquewhite;
+}
+
+.left-panel
+{
+	padding: 7% 5% 0% 15%
+}
+
+.right-panel
+{
+	padding: 7% 15% 0% 5%
+}
+
+.btnGrp
+{
+	background-color: saddlebrown;
+	width: 15vw;
+	border-style: none !important;
+	text-decoration: none !important;
+	box-shadow: 2px 2px 2px darkred;
+    border-radius: 25px;
+}
+
+.btnGrp:hover
+{
+	background-color: sandybrown;
+	border-style: none !important;
+	text-decoration: none !important;
+}
+
+.btnGrp:active,.btnGrp:focus
+{
+	border-style: none !important;
+	text-decoration: none !important;
+	outline: none !important;
+}
+
+#btn1
+{
+	background-color: tan;
+}
+
+#my-list
+{
+	background-color:antiquewhite;
+}
+

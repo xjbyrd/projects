@@ -1,0 +1,309 @@
+
+/*
+	=== COLOR PALLET ===
+	#588C7E = Sea Green
+	#D96459 = Burnt Orange
+	#F2AE72 = Light Orange
+	#F2E394 = Yellow
+	#8C4646 = Dark Red
+*/
+
+/*============= CUSTOM BUTTON =============*/
+
+body
+{
+    background-color: #588C7E;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.9;
+}
+
+.xj-custom-button-title
+{
+	font-size: 1.3em;
+}
+
+.xj-custom-button
+{
+	border-style:outset;
+	border-width:5px;
+}
+
+.xj-custom-button:active
+{
+	border-style:inset;
+}
+
+.xj-custom-button-head
+{
+	color: black;
+}
+
+.xj-custom-button-body
+{
+	color: #5E412F;
+}
+
+/*============= HEADINGS =============*/
+
+.xj-big-heading
+{
+	color: #5E412F;
+	font: bold 3.7em Georgia;
+}
+
+.xj-heading
+{
+	color: #5E412F;
+	font: bold 3em Georgia;
+}
+
+/*============= INPUT =============*/
+
+.xj-input
+{
+	background-color: antiquewhite;
+	width: 50%;
+}
+
+.xj-input-sm
+{
+	background-color: antiquewhite;
+	width: 31%;
+}
+
+/*============= PANEL =============*/
+
+.xj-panel
+{
+	box-shadow: 5px 5px 5px #5E412F;
+    border-radius: 27px;
+    background-color: #5E412F;
+}
+
+.xj-panel-head
+{
+    background-color: #D96459;
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+    color: #5E412F;
+}
+
+.xj-panel-body
+{
+	border-bottom-left-radius: 26px;
+	border-bottom-right-radius: 26px;
+	background-color: #F2AE72;
+}
+
+/*============= WELL =============*/
+
+.xj-well
+{
+    background-color: bisque;
+}
+
+/*============= BUTTON =============*/
+
+.xj-button-lg
+{
+	width: 60%;
+	background-color: bisque;
+	color: #5E412F;
+	height: 2.5em;
+	font-weight: bold;
+}
+
+.xj-button-md
+{
+	width: 45%;
+	background-color: bisque;
+	color: #5E412F;
+	height: 2.5em;
+	font-weight: bold;
+}
+
+/*============= LINK =============*/
+
+.xj-link
+{
+	font-size: 1.5em;
+}
+
+.xj-link:active, .xj-link:focus, .xj-link:hover
+{
+	text-decoration: none !important;
+	outline: none !important;
+	border-style: none !important;
+}
+
+/*============= MISC =============*/
+
+.xj-clear:active, .xj-clear:focus, .xj-clear:hover
+{
+	border-style: none !important;
+	text-decoration: none !important;
+	outline: none !important;
+}
+
+.xj-navbar
+{
+	width: 25vw;
+	margin-left: 72vw;
+}
+
+.xj-divider
+{
+	color: black;
+	font-size: 1.5em;
+}
+
+/*============= SINGLE ELEMENT CLASSES =============*/
+
+.xj-clear-outline:focus, .xj-clear-outline:focus
+{
+	outline: none !important;
+}
+
+.xj-small-font
+{
+	font-size: .8em;
+}
+
+.xj-pad-left
+{
+	padding-left: 3%;
+}
+
+.xj-pad-right
+{
+	padding-right: 3%;
+}
+
+.xj-darkred
+{
+	color: #8C4646;
+}
+
+.xj-black
+{
+	color:black;
+}
+
+.xj-error
+{
+	color: red;
+}
+
+/*============= SCROLL BOX =============*/
+
+ul
+{
+	text-decoration: none !important;
+}
+
+.xj-scrollbox-panel
+{
+	box-shadow: 5px 5px 5px #5E412F;
+    border-radius: 27px;
+    background-color: #5E412F;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.xj-scrollbox-panel-square
+{
+	box-shadow: 5px 5px 5px #5E412F;
+    background-color: #5E412F;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.xj-scrollbox-panel-head-square
+{
+	background-color: #D96459;
+    color: 5E412F;
+	cursor: pointer;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.xj-scrollbox-panel-head
+{
+	background-color: #D96459;
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+    color: 5E412F;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.xj-scrollbox-panel-body-lg
+{
+	overflow-y: scroll;
+	height: 50vh;
+	background-color: #F2AE72;
+}
+
+.xj-scrollbox-panel-body-md
+{
+	overflow-y: scroll;
+	height: 30vh;
+	background-color: #F2AE72;
+}
+
+.xj-scrollbox-panel-body-sm
+{
+	overflow-y: scroll;
+	height: 20vh;
+	background-color: #F2AE72;
+}
+
+.xj-scrollbox-panel-footer
+{
+	background-color: #D96459;
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
+}
+
+.xj-scrollbox-panel-footer-square
+{
+	background-color: #D96459;
+}
+
+.xj-scrollbox-panel ul
+{
+	list-style-type: none;
+}
+
+.xj-scrollbox
+{
+	list-style: none;
+}
+
+.xj-scrollbox li .scrollbox-body p
+{
+	margins: 0;
+	padding: 0;
+	color: #777777;
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: bisque;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #555;
+}
